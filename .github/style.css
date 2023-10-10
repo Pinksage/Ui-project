@@ -1,0 +1,113 @@
+/* Reset some default styles */
+* {
+    font-family: 'Bigelow Rules', serif;
+    font-weight: bolder;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+   background: url(https://images.ctfassets.net/usf1vwtuqyxm/71J6YPxNauhFABbjHpGluJ/631bd6980b0a430d5b476ef331abb2b5/release_1_hogwarts.png);
+   background-position: cover;
+}
+
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+}
+
+.menu-toggle {
+    width: 25px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+/* Menu styles */
+.menu {
+    list-style: none;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    overflow-y: scroll;
+    font-size: 25px;
+}
+
+.menu.active {
+    right: 0;
+}
+
+.menu-item {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+    background-color: #555;
+}
+
+/* Content styles */
+.content {
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.character-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(234, 221, 38);
+}
+
+.character-image {
+    width: 300px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.character-name {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(46, 165, 25);
+}
+
+.house, .species {
+    font-size: 25px;
+    color: rgb(234, 221, 38);
+}
+
